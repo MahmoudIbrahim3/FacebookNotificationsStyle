@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:id="@+id/ll_background">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="top">
+
+            <ImageView
+                android:layout_width="@dimen/width_list_item_icon"
+                android:layout_height="@dimen/width_list_item_icon"
+                android:id="@+id/iv_icon"
+                android:layout_gravity="top"
+                android:src="@drawable/ic_facebook"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:paddingLeft="@dimen/padding_list_item">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_body"
+                android:textColor="@color/gray_text_color"
+                android:gravity="left"
+                android:text="New Text"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tv_date"
+                android:textColor="@color/gray_date_color"
+                android:textStyle="italic"
+                android:gravity="left"
+                android:drawableLeft="@drawable/ic_settings_applications_black_18dp"
+                android:drawablePadding="@dimen/padding_drawable_small_icon"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
